@@ -2,7 +2,7 @@ eb init udagram-api -r $AWS_DEFAULT_REGION -p node.js
 eb use udagram-api-dev3
 eb deploy udagram-api-dev3
 
-eb setenv AWS_PROFILE=$AWS_DEFAULT_PROFILE
+eb setenv AWS_DEFAULT_PROFILE=$AWS_DEFAULT_PROFILE
 eb setenv AWS_BUCKET=$AWS_BUCKET
 eb setenv AWS_REGION=$AWS_DEFAULT_REGION
 eb setenv JWT_SECRET=$JWT_SECRET

@@ -44,4 +44,4 @@ workflows:
       - Build-Deploy:
           filters:
             branches:
-              only: main
+              only: master

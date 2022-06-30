@@ -33,13 +33,14 @@ jobs:
           command: |
             npm run frontend:deploy
       - run:
-          name: Deploy Back-End
+          name: Deploy BackEnd
           command: |
             npm run backend:deploy
 
 workflows:
   deployment:
     jobs:
+      # Build & Deploy the project on `Main` branch
       - Build-Deploy:
           filters:
             branches:

@@ -4,6 +4,13 @@ orbs:
   aws-cli: circleci/aws-cli@3.1.1
   eb: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
+ aws-cli-cred-setup:
+    executor: aws-cli/default
+    steps:
+      - aws-cli/setup:
+          aws-access-key-id: AWS_ACCESS_KEY
+          aws-secret-access-key: AWS_ACCESS_SECRET
+          aws-region: AWS_REGION_NAME
   Build-Deploy:
     docker:
       - image: "cimg/base:stable"
@@ -38,6 +45,10 @@ jobs:
             npm run backend:deploy
 
 workflows:
+  aws-cli:
+    jobs:
+      - aws-cli-cred-setup:
+          context: aws
   deployment:
     jobs:
       # Build & Deploy the project on `Main` branch

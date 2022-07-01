@@ -49,6 +49,7 @@ Provision the necessary AWS services needed for running the application:
 ## Deployment
 
 - [http://mmn-udagram.s3-website-us-east-1.amazonaws.com](http://mmn-udagram.s3-website-us-east-1.amazonaws.com) - S3 Bucket - udagram-frontend
+  [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/mmn420/udagram)
 
 ## Documents
 

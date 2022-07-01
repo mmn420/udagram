@@ -11,5 +11,5 @@ The pipeline is set up and connected with this GitHub repository in CircleCI.
 5. Deploy the frontend to AWS S3.
 6. Deploy the backend to AWS Elastic Beanstalk.
 
-![pipeline diagram](Screenshots/pipeline_diagram.drawio.png)
-![CircleCi pipline](Screenshots/circleci_pipeline.png)
+![pipeline diagram](screenshots/pipeline_diagram.drawio.png)
+![CircleCi pipline](screenshots/circleci_pipeline.png)

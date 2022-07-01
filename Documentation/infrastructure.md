@@ -1,7 +1,7 @@
 # Project Infrastructure
 
 Udagram is a full stack app built using Angular/Ionic in the front-end hosted in an S3 bucket and a back-end API using Express/Node.js and hosted on Elastic Beanstalk by AWS. The database is a PostgreSQL db hosted on RDS.
-![infrastructure Digram](Screenshots/infrastructure_diagram.png)
+![infrastructure Digram](screenshots/infrastructure_diagram.png)
 
 ## AWS Cloud Setup
 
